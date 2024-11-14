@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EA11C060-C9A9-4AE6-BF37-7D6C6C290AA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9D2F95E-5B20-4559-A7B3-AC47A2302023}"
+	ProjectSection(SolutionItems) = preProject
+		ServiceUrls.txt = ServiceUrls.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{111F4413-2DBB-45D0-92AB-D43249985B23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiGateway", "WebApiGateway", "{3C0DB9D5-FC32-4168-8A42-285BCD1BA5C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{7C9F1380-B156-453B-99D9-5FE1ABF51690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Base", "src\EventBus\EventBus.Base\EventBus.Base.csproj", "{972CE5C5-3818-4190-B704-5E0367B0E8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.ApiGateway", "src\ApiGateways\WebApiGateway\Web.ApiGateway\Web.ApiGateway.csproj", "{AD49CB8F-E5BA-43AA-B28B-CBEEF6E3D68F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Factory", "src\EventBus\EventBus.Factory\EventBus.Factory.csproj", "{16E05314-2604-4C5D-99E4-D048C8A60B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.RabbitMQ", "src\EventBus\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{0BB29317-068C-4C0A-A895-F315B123AE09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{972CE5C5-3818-4190-B704-5E0367B0E8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972CE5C5-3818-4190-B704-5E0367B0E8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972CE5C5-3818-4190-B704-5E0367B0E8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972CE5C5-3818-4190-B704-5E0367B0E8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD49CB8F-E5BA-43AA-B28B-CBEEF6E3D68F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD49CB8F-E5BA-43AA-B28B-CBEEF6E3D68F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD49CB8F-E5BA-43AA-B28B-CBEEF6E3D68F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD49CB8F-E5BA-43AA-B28B-CBEEF6E3D68F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E05314-2604-4C5D-99E4-D048C8A60B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E05314-2604-4C5D-99E4-D048C8A60B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E05314-2604-4C5D-99E4-D048C8A60B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E05314-2604-4C5D-99E4-D048C8A60B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB29317-068C-4C0A-A895-F315B123AE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB29317-068C-4C0A-A895-F315B123AE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB29317-068C-4C0A-A895-F315B123AE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB29317-068C-4C0A-A895-F315B123AE09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{111F4413-2DBB-45D0-92AB-D43249985B23} = {EA11C060-C9A9-4AE6-BF37-7D6C6C290AA8}
+		{3C0DB9D5-FC32-4168-8A42-285BCD1BA5C8} = {111F4413-2DBB-45D0-92AB-D43249985B23}
+		{7C9F1380-B156-453B-99D9-5FE1ABF51690} = {EA11C060-C9A9-4AE6-BF37-7D6C6C290AA8}
+		{972CE5C5-3818-4190-B704-5E0367B0E8D4} = {7C9F1380-B156-453B-99D9-5FE1ABF51690}
+		{AD49CB8F-E5BA-43AA-B28B-CBEEF6E3D68F} = {3C0DB9D5-FC32-4168-8A42-285BCD1BA5C8}
+		{16E05314-2604-4C5D-99E4-D048C8A60B8E} = {7C9F1380-B156-453B-99D9-5FE1ABF51690}
+		{0BB29317-068C-4C0A-A895-F315B123AE09} = {7C9F1380-B156-453B-99D9-5FE1ABF51690}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AAFB919-68BC-4772-A8D9-CAD1920C0EC1}
+	EndGlobalSection
+EndGlobal
